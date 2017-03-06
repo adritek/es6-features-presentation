@@ -35,7 +35,7 @@ In ES6, you use a block and a ```let``` or ```const``` declaration
 ```
 {
   let joe = 1;
-  const somethingElse = 2;
+  const mama = 2;
 }
 console.log(joe); // ReferenceError: something is not defined
 console.log(mama); // ReferenceError: something is not defined
