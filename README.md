@@ -14,7 +14,8 @@
 ## ```var const```, and ```let```
 
 * var - functionally scoped
-*  ```let``` is like a block-scoped version of ```var```
-*   ```const``` works like ```let``` - but these variables values can’t be changed
+  * ```let``` is like a block-scoped version of ```var```
+   * ```const``` works like ```let``` - but these variables values can’t be changed
 * ```let``` and ```const``` are more strict and throw more exceptions so you can just find/replace all your ```var```s
 [Additional reading](http://stackoverflow.com/questions/34564403/what-is-block-scope-function-ecmascript-6-compare-with-ecmascript-5)
+* Hoisting is weird
