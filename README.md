@@ -1,12 +1,8 @@
 # Notes
 ## A quick rundown on ES6 classes and other helpful ES6 things
 
-* ES6 classes provide a simpler and clearer syntax to create objects and deal with inheritance.
-* Classes can be expressions and declarations, much like functions.
-* You can have named and unnamed class declarations.
-* Class declarations are not hoisted, and are executed in strict mode.
-* Constructors can use the super keyword to use the constructors of a parent class.
-* You can only have one constructor method per class.
+So like, can we [use ES6 now](http://kangax.github.io/compat-table/es6/)?
+And, so like, [how do we do it](https://leanpub.com/setting-up-es6/read#ch_deploying-es6)?
 
 * Is it ES6 or EcmaScript 2015? Both!
 *  Technically it's EcmaScript 2015, but everyone calls it ES6 - there is a naming [convention](https://tc39.github.io/process-document/) now.
@@ -43,7 +39,15 @@ console.log(mama); // ReferenceError: something is not defined
 [Additional reading](http://stackoverflow.com/questions/27471510/block-scoping-in-es6)
 
 ## ES6 classes
-* Where to begin! [Classes - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
+* Where to begin!
+* ES6 classes provide a simpler and clearer syntax to create objects and deal with inheritance.
+* Classes can be expressions and declarations, much like functions.
+* You can have named and unnamed class declarations.
+* Class declarations are not hoisted, and are executed in strict mode.
+* Constructors can use the ```super``` keyword to use the constructors of a parent class.
+* You can only have one constructor method per class.
+* Sub Classing with ```extends```
+[Classes - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
 
 ## String Interpolation to Template Literals
 ```
