@@ -2,6 +2,7 @@
 ## A quick rundown on ES6 classes and other helpful ES6 things
 
 So like, can we [use ES6 now](http://kangax.github.io/compat-table/es6/)?
+
 And, so like, [how do we do it](https://leanpub.com/setting-up-es6/read#ch_deploying-es6)?
 
 * Is it ES6 or EcmaScript 2015? Both!
@@ -13,6 +14,8 @@ And, so like, [how do we do it](https://leanpub.com/setting-up-es6/read#ch_deplo
   * ```let``` is like a block-scoped version of ```var```
     * ```const``` works like ```let``` - but these variables values can’t be changed
 * ```let``` and ```const``` are more strict and throw more exceptions so you can just find/replace all your ```var```s
+
+
 [Additional reading](http://stackoverflow.com/questions/34564403/what-is-block-scope-function-ecmascript-6-compare-with-ecmascript-5)
 * Hoisting is weird
 * Gereral internet advice seems to be:
