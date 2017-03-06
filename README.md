@@ -7,9 +7,9 @@ And, so like, [how do we do it](https://leanpub.com/setting-up-es6/read#ch_deplo
 * Is it ES6 or EcmaScript 2015? Both!
 *  Technically it's EcmaScript 2015, but everyone calls it ES6 - there is a naming [convention](https://tc39.github.io/process-document/) now.
 
-## ```var const```, and ```let```
+## ```var``` ```const```, and ```let```
 
-* var - functionally scoped
+* ```var``` - functionally scoped
   * ```let``` is like a block-scoped version of ```var```
     * ```const``` works like ```let``` - but these variables values can’t be changed
 * ```let``` and ```const``` are more strict and throw more exceptions so you can just find/replace all your ```var```s
@@ -36,6 +36,7 @@ In ES6, you use a block and a ```let``` or ```const``` declaration
 console.log(joe); // ReferenceError: something is not defined
 console.log(mama); // ReferenceError: something is not defined
 ```
+
 [Additional reading](http://stackoverflow.com/questions/27471510/block-scoping-in-es6)
 
 ## ES6 classes
@@ -47,6 +48,7 @@ console.log(mama); // ReferenceError: something is not defined
 * Constructors can use the ```super``` keyword to use the constructors of a parent class.
 * You can only have one constructor method per class.
 * Sub Classing with ```extends```
+
 [Classes - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Classes)
 
 ## String Interpolation to Template Literals
@@ -81,7 +83,8 @@ function whosJoe() {
   * ```super```
   * ```this```
   * ```new.target```
-[Aarow functions - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [Lexical scoping - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures#Lexical_scoping)
+  
+[Arrow functions - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [Lexical scoping - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures#Lexical_scoping)
 
 ## Default Parameter values
 ```
@@ -163,7 +166,7 @@ if (str.startsWith('x')) { // magic }
 * ```includes()```
 ```
 const str = 'jackiechan';
-if (str.includes('x')) { console.log("Always do your best!") }
+if (str.includes('e')) { console.log("Always do your best!") }
 ```
 
 ## This is Just the Tip! Get Deep Into ES6
