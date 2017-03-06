@@ -19,3 +19,33 @@
 * ```let``` and ```const``` are more strict and throw more exceptions so you can just find/replace all your ```var```s
 [Additional reading](http://stackoverflow.com/questions/34564403/what-is-block-scope-function-ecmascript-6-compare-with-ecmascript-5)
 * Hoisting is weird
+* Gereral internet advice seems to be:
+  * Prefer ```const``` - for variables whose values never change.
+  * Use ```let``` – for variables whose values do change.
+  * Keep ``var`` - for legacy variables.
+
+## Out with the IIFEs! In with the Blocks!
+Currently to restrict the scope of a variable 'x' to a block we'd use the IIFE pattern
+```
+(function () {
+  // dreams
+})();
+```
+In ES6, you use a block and a ```let``` or ```const``` declaration
+```
+{
+  let joe = 1;
+  const somethingElse = 2;
+}
+console.log(joe); // ReferenceError: something is not defined
+console.log(mama); // ReferenceError: something is not defined
+```
+[Additional reading](http://stackoverflow.com/questions/27471510/block-scoping-in-es6)
+
+## String Interpolation to Template Literals
+```
+function joeWho(x, y) {
+    console.log(`(${x}, ${y})`);
+}
+joeWho(Joe, Mama); // You know who...
+```
