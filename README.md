@@ -62,11 +62,13 @@ joeWho(Joe, Mama); // You know who...
 
 ## Function Expressions => Arrow Functions
 * They are less verbose
-  * ```const arr = [1, 2, 3];
-const squares = arr.map(x => x * x);```
+```
+const arr = [1, 2, 3];
+const squares = arr.map(x => x * x);
+```
     * You can lose the parentheses if the parameter is just a single identifier.
     * ```(x) => x * x``` and ```x => x * x``` are the same.
-* ```this``` is picked up from surroundings (lexical). Therefore, you don’t need bind() or that = this, anymore.
+* ```this``` is picked up from surroundings (lexical). Therefore, you don’t need ```bind()``` or ```that = this```, anymore.
 ### What is Lexical scoping?
 * Lexical Scoping defines how variable names are resolved in nested functions: inner functions contain the scope of parent functions even if the parent function has returned.
 ```
@@ -83,7 +85,7 @@ function whosJoe() {
   * ```super```
   * ```this```
   * ```new.target```
-  
+
 [Arrow functions - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) and [Lexical scoping - MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures#Lexical_scoping)
 
 ## Default Parameter values
@@ -119,7 +121,7 @@ for (const el of arr) {
     console.log(el);
 }
 ```
-To get both index and value of each array element use the new array method entries() and destructuring:
+To get both index and value of each array element use the new array method ```entries()``` and destructuring:
 ```
 for (const [index, el] of arr.entries()) {
     console.log(index+'. '+el);
@@ -140,6 +142,7 @@ function selfAware(el) {
 ```
 ### Behold! The spread operator ```...```
 ```const arr = [...'abc'];```
+
 ```Math.max(...[-1, 5, 11, 3];)```
 * Instead of ```apply()```
 ```
